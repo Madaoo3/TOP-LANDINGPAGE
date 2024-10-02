@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Asegurarse de que el html y el body ocupen toda la pantalla sin márgenes */
+
 html, body {
     height: 100%;
     width: 100%;
@@ -9,7 +9,7 @@ html, body {
     box-sizing: border-box;
 }
 
-/* Configuración del contenedor de la cabecera */
+
 .header {
     background-color: #1F2937;
     display: flex;
@@ -20,7 +20,7 @@ html, body {
     height: 45%;
 }
 
-/* Flexbox para alinear el contenido de la cabecera */
+
 .real-header {
     display: flex;
     justify-content: space-between;
@@ -30,7 +30,7 @@ html, body {
     margin: 0 auto;
 }
 
-/* Alinear los enlaces a la derecha */
+
 .link-derecha {
     display: flex;
     align-items: center;
@@ -38,38 +38,29 @@ html, body {
     gap: 16px;
 }
 
-/* Configuración para la sección principal del contenido */
+
 .bold {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
 }
 
-/* Contenedor general que ocupa toda la altura */
+
 .conteiner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh; /* 100% de la altura del viewport */
-    width: 100vw; /* Ancho completo */
+    min-height: 100vh; 
+    width: 100vw; 
 }
 
-/* Sección inferior */
+
 .footer {
     background-color: #1F2937;
     padding: 10px;
     text-align: center;
     color: #F9FAF8;
 }
-
-/* Estilos generales */
-p {
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 300;
-    color: #1F2937;
-}
-
 a {
     text-decoration: none;
     color: gray;
@@ -96,8 +87,26 @@ ul {
     font-weight: bold;
 }
 .medio{
-    background-color: #E5E7EB
+    background-color: #cacbce;
+    width: 100%;
+
 }
+.texto {
+    width: 50%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    margin: 0 auto; 
+}
+
+p {
+    font-size: 26px;
+    font-style: italic;
+    color: #1F2937;
+}
+
 .azul{
     background-color: #3882F6;
     display: flex;
@@ -148,40 +157,66 @@ button{
     padding-bottom: 4px;
 }
 .p{
-    font-size: 28px;
+    font-size: 40px;
     color: rgb(46, 45, 45);
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 999;
     padding: 16px;
+    margin-bottom: 20px;
 
 }
-/* Contenedor de los cuadrados */
+
 .information {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los cuadrados se ajusten en filas */
-    justify-content: space-between; /* Espacio entre los cuadrados */
-    gap: 20px; /* Espacio entre los cuadrados */
-    margin: 20px 0; /* Márgenes superior e inferior */
+    max-width: 200px;
 }
 
-/* Estilos para los cuadrados */
 .cuadrados {
-    
     border: 4px solid #3882F6;
-    width: 125px; /* Ancho fijo */
-    height: 125px; /* Altura fija para formar un cuadrado */
+    width: 125px; 
+    height: 125px; 
+    border-radius: 8px; 
+    color: white; 
+    font-size: 16px;  
+    padding: 10px;
     display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    border-radius: 8px; /* Bordes redondeados */
-    color: white; /* Texto en blanco */
-    text-align: center; /* Alineación del texto en el centro */
-    font-size: 16px; /* Tamaño de fuente del texto */
+    align-items: center;
+    justify-content: space-evenly;  
+    box-sizing: content-box;
+    
 }
 
-/* Estilo para el texto dentro de los cuadrados */
+
 .texto-cuadrado {
-    padding: 10px; /* Espaciado interno */
+    padding: 10px; 
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    color: #1F2937;
+    font-size: 15px;
+    font-style: italic;
+    width: 80%;
+    text-align: center;
+    transform: translateX(-4px);
+}
+
+.caja-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.caja-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.alinear-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
